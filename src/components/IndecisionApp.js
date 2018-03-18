@@ -91,7 +91,8 @@ clearOption = () =>{
 		return(
 			<div>
 			<Header subtitle={subtitle} />
-			<Action 
+			<div className="container">
+				<Action 
 			hasOptions={this.state.options.length>0} 
 			handleAddPick={this.handleAddPick}
 			/>
@@ -101,6 +102,8 @@ clearOption = () =>{
 			handleDeleteOption={this.handleDeleteOption}
 			/>
 			<AddOption handleAddOption={this.handleAddOption} />
+			</div>
+			
 			<OptionModal clearOption={this.clearOption} selectedOption={this.state.selectedOption}/>
 			</div>
 			)
