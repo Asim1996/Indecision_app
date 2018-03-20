@@ -96,12 +96,16 @@ clearOption = () =>{
 			hasOptions={this.state.options.length>0} 
 			handleAddPick={this.handleAddPick}
 			/>
-			<Options 
+			<div className="widget">
+				<Options 
 			options={this.state.options} 
 			handleDeleteOptions={this.handleDeleteOptions}
 			handleDeleteOption={this.handleDeleteOption}
 			/>
+					
 			<AddOption handleAddOption={this.handleAddOption} />
+	
+			</div>
 			</div>
 			
 			<OptionModal clearOption={this.clearOption} selectedOption={this.state.selectedOption}/>
