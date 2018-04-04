@@ -1,7 +1,7 @@
 .header{
 	background:$off-black;
 	color:white;
-	margin-bottom:$l-size;
+	margin-bottom:$m-size;
 	padding:$s-size 0;
 }
 
@@ -14,4 +14,11 @@
 	font-size:$s-size;
 	font-weight:500;
 	margin:0;
+}
+
+@media (min-width:$desktop-breakpoint) {
+	.header{
+		margin-bottom:$l-size;
+	}
+	
 }
